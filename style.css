@@ -21,23 +21,21 @@ img {
   flex-direction: row-reverse;
   align-items: flex-start;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .event-section .event-text {
   flex: 1;
-  min-width: 300px;
 }
 
 .event-section .event-image-container {
   flex: 1;
-  min-width: 300px;
+  max-width: 400px;
 }
 
 .event-image {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
   height: auto;
 }
