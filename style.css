@@ -10,3 +10,9 @@ a{color:#0056b3;text-decoration:none;}
 a:hover{text-decoration:underline;}
 .clickable{cursor:pointer;}
 .card.highlighted{border:2px solid #007bff;background-color:#e6f0ff;}
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
