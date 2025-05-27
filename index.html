@@ -138,12 +138,10 @@
 <script>
   const goTopBtn = document.getElementById('goTopBtn');
 
-  // لما يضغط على الزر يرجع لفوق بسلاسة
   goTopBtn.onclick = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  // يظهر الزر فقط لما المستخدم ينزل شوي لتحت
   window.onscroll = () => {
     if (document.documentElement.scrollTop > 300) {
       goTopBtn.style.display = 'block';
