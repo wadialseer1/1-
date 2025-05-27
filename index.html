@@ -122,39 +122,39 @@
                 <li><a href="https://moe.gov.jo/" target="_blank">وزارة التربية والتعليم الأردنية</a></li>
                 <li><a href="https://academy.moe.gov.jo" target="_blank">رابط اختيار المسارات</a></li>
                 <li><a href="https://maps.app.goo.gl/SQrRKZ6mthAR5qXs7" target="_blank">موقع المدرسة على الخريطة</a></li>
-            </ul>
+                           <li><a href="https://moe.gov.jo/" target="_blank">وزارة التربية والتعليم الأردنية</a></li>
+                <li><a href="https://academy.moe.gov.jo" target="_blank">رابط اختيار المسارات</a></li>
+                </ul>
         </section>
     </main>
 
+    <button id="goTopBtn" style="display: none;">↑</button>
 
+    <script>
+        function highlight(element) {
+            document.querySelectorAll('.card').forEach(card => {
+                card.classList.remove('highlighted');
+            });
+            element.classList.add('highlighted');
+        }
 
-<button id="goTopBtn" style="display: none;">↑</button>
+        const goTopBtn = document.getElementById('goTopBtn');
 
+        goTopBtn.onclick = () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
 
-<script>
- 
-  function highlight(element) {
-    document.querySelectorAll('.card').forEach(card => {
-      card.classList.remove('highlighted');
-    });
-    element.classList.add('highlighted');
-  }
-
-  
-  const goTopBtn = document.getElementById('goTopBtn');
-
-  goTopBtn.onclick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  window.onscroll = () => {
-    if (document.documentElement.scrollTop > 300) {
-      goTopBtn.style.display = 'block';
-    } else {
-      goTopBtn.style.display = 'none';
-    }
-  };
-</script>
-
+        window.onscroll = () => {
+            if (document.documentElement.scrollTop > 300) {
+                goTopBtn.style.display = 'block';
+            } else {
+                goTopBtn.style.display = 'none';
+            }
+        };
+    </script>
 </body>
 </html>
+
+              
+                
+         
