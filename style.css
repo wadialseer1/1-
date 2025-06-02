@@ -100,3 +100,18 @@ img {
 #goTopBtn:hover {
   background-color: #0b5ed7;
 }
+
+.graduation-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.graduation-img:hover {
+  transform: scale(1.05);
+}
