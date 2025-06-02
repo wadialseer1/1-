@@ -115,3 +115,19 @@ img {
 .graduation-img:hover {
   transform: scale(1.05);
 }
+
+.graduation-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border: 4px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.graduation-img:hover {
+  transform: scale(1.07);
+}
